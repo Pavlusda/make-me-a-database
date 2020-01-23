@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Database!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- Figure out how to: -->
+<!-- 1. set up a MongoDB Altas database with a Node.js application -->
+<!-- 2. send data to the db through a form (this is your input section with submit button - "Add a record") -->
+<!-- 3. retrieve data from the db to display in a list ("All Records") -->
+
+    <div id="main">
+        <h1 id="title">Make me a Database!</h1>
+        <p id="description">Use this page to practice creating a database (using MongoDB Atlas) and interacting with data values by modifying the code. The point of this database is to store a list of potential pet names. Enjoy!</p>
+        <div id="steps-div">
+            <p id="steps-title">Follow these steps to run your server:</p>
+            <ol id="steps">
+                <li>Click on the Windows icon and search for "command prompt" to open your terminal</li>
+                <li>Navigate to this project directory ending in ".../practice"</li>
+                <li>Once inside the project directory type the command "node server" and press enter</li>
+                <li>You should see a confirmation message saying that the server is running. You can now open a browser and type "localhost:3000" into the URL to open the application</li>
+                <li>To close the server press CTRL + C in the command prompt, save your changes in Visual Studio Code, and restart the server to view changes</li>
+            </ol>
+        </div>
+
+        <div id="content">
+                <!-- Input a record -->
+            <div id="input-record-box" class="content-box">
+                <h3 class="box-titles">Add a record</h3>
+                <div id="input-record">
+                    <div id="input-record-inner" class="inner-content">
+                        <label for="petName">Pet Name</label>
+                        <input id="petName" type="text" name="petName">
+                        
+                        <label for="species">Species</label>
+                        <input id="species" type="text" name="species">
+                        
+                        <button id="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View all records from database -->
+            <div id="db-list-box" class="content-box">
+                <h3 class="box-titles">All records</h3>
+                <div class="inner-content">
+                    <ul>
+                        <li>Blueberry - cat</li>
+                        <li>Gravy - goat</li>
+                    </ul>
+                </div class="inner-content">
+            </div>
+            
+            <!-- View filtered records -->
+            <div id="db-filter-box" class="content-box">
+                <h3 class="box-titles">Filtered records</h3>
+                <div class="inner-content">
+                    <ul>
+                        <li>Gravy - goat</li>
+                        <li>Blueberry - cat</li>
+                    </ul>
+                </div class="inner-content">
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

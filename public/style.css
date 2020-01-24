@@ -1,8 +1,8 @@
 body {
     background-color: #2f2f2f;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     font-family: 'Raleway', sans-serif;
     color: #8a8a8a;
 }
@@ -10,7 +10,8 @@ body {
 #main {
     width: 90%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h1, title {
@@ -74,6 +75,9 @@ h1, title {
 
 .inner-content {
     background-color: #292929;
+    border-radius: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 label {
@@ -96,6 +100,15 @@ input {
     border-radius: 4px;
     height: 2rem;
     background-color: #cacaca;
+    font: inherit;
+    text-align: center;
+    border-style: none;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid grey;
+    box-shadow: 0 0 1.5px grey;
 }
 
 button {
@@ -106,4 +119,25 @@ button {
     border-radius: 4px;
     height: 2rem;
     background-color: #cacaca;
+    border-style: none;
+    cursor: pointer;
+    font: inherit;
+    outline: none;
+    transition: all 10ms linear;
 }
+
+button:hover {
+    border: 1px solid grey;
+    box-shadow: 0 0 1.5px grey;
+}
+
+button:active {
+    background-color: #afafaf;
+}
+
+#footer {
+    text-align: center;
+    color: #cacaca;
+    margin-bottom: 0;
+    margin-top: 25px;
+  }

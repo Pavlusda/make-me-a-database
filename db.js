@@ -1,3 +1,6 @@
+
+
+/*
 const {MongoClient} = require('mongodb');
 
 async function main() {
@@ -46,22 +49,4 @@ async function listPets(client) {
     pets.forEach(doc => console.log(`- ${doc.name} (${doc.species})`));
 }
 
-
-
-/*
-const MongoClient = require('mongodb').MongoClient;
-
-// Database connection string for "PetBD" cluster
-const uri = "mongodb+srv://petDB:petdbCluster@petdb-yqrvq.mongodb.net/test?retryWrites=true&w=majority"
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-
-MongoClient.connect(uri, { useNewUrlParser: true }, function(err, client) {
-   if(err) {
-        console.log('Error occurred while connecting to MongoDB Atlas...\n',err);
-   }
-   console.log('Connected...');
-   const collection = client.db("test").collection("devices");
-   // perform actions on the collection object
-   client.close();
-});
 */
